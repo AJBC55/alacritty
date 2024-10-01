@@ -1,0 +1,79 @@
+
+# Window settings
+[window]
+# Window dimensions (changes require restart)
+dimensions = { columns = 180, lines = 48}
+
+# Set window padding
+padding = { x = 10, y = 10 }
+
+# Window decorations: full, none, or transparent
+decorations = "full"
+
+# Startup mode: Windowed or Fullscreen
+startup_mode = "Windowed"
+
+# Background opacity
+opacity = 0.9
+
+# Font configuration
+[font]
+# Normal font face
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+
+# Bold font facck Nerd Font Mono", style = "Regular" }e
+bold = { family = "Hack Nerd Font Mono", style = "Bold" }
+
+# Font size
+size = 13.0
+
+# Offset for the font
+offset = { x = 0, y = 0 }
+
+# Glyph offset for the font
+glyph_offset = { x = 0, y = 0 }
+
+# Colors configuration
+[colors]
+[colors.primary]
+background = "#173744"# Extracted from BackgroundColor in .terminal
+foreground = "#dfdfdc"
+
+[colors.cursor]
+text = "#1d1f21"
+cursor = "#c5c8c6"
+# Key bindings
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+# Scrolling settings
+[scrolling]
+history = 10000         # Number of lines in the scrollback buffer
+multiplier = 3          # Scroll speed multiplier
+
+# Mouse settings
+[mouse]
+# Enable URL detection and underlining
+# Automatically hide the mouse cursor when typing
+hide_when_typing = true
+
+# Shell settings
+[shell]
+program = "/bin/zsh"  # Default shell, change to your preferred shell
+args = ["--login"]
+
+# Cursor style
+[cursor]
+style = "Block"  # Options: Block, Underline, Beam
+
+# Vi mode cursor style
+# Disable the terminal bell
+[bell]
+command = "None"
