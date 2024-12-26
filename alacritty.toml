@@ -65,7 +65,7 @@ multiplier = 3          # Scroll speed multiplier
 hide_when_typing = true
 
 # Shell settings
-[shell]
+[terminal.shell]
 program = "/bin/zsh"  # Default shell, change to your preferred shell
 args = ["--login"]
 
@@ -77,3 +77,5 @@ style = "Block"  # Options: Block, Underline, Beam
 # Disable the terminal bell
 [bell]
 command = "None"
+
+[terminal]
